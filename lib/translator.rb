@@ -5,7 +5,10 @@ def load_library(file_path)
   # code goes here
   emoticon_hash = file_path.load_file
   emoticon_hash.reduce({}) do |memo, (k, v)|
-    
+    memo[k] = {
+      :english => v[0],
+      :japanese => v[1]
+    }
   end
 end
 
