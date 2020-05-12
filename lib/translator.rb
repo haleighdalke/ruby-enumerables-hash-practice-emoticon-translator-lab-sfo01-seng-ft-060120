@@ -9,6 +9,7 @@ def load_library(file_path)
       :english => v[0],
       :japanese => v[1]
     }
+    memo
   end
 end
 
